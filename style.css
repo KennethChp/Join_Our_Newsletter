@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background-color: #f9fafc;
+    font-family: 'Poppins', sans-serif;
+    margin: 0; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+img {
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 600; 
+    color: #000000;
+    margin-bottom: 20px;
+   
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400; 
+    text-align: center;
+    color: #6C727F;
+    margin-bottom: 150px;
+    
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    height: 150px;
+    width: 110%;
+    max-width: 1100px; /* Keeps it contained on larger screens */
+    text-align: center;
+}
+
+form {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 400px;
+    width: 100%;
+    margin-top: -100px;
+}
+
+input[type="email"],
+button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure consistent sizing */
+}
+
+input[type="email"] {
+    margin-bottom: 20px;
+    border: 1px solid #E5E7EB;
+    text-align: center;
+}
+
+::placeholder {
+
+    font-weight: 500;
+    font-size: 16px;
+    color: #6C727F;
+}
+
+button {
+  
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #3662E3;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.helper {
+    
+    font-weight: 400; /* Changed to numeric value */
+    font-size: 14px;
+    text-align: center;
+    color: #6C727F;
+    margin-top: 30px;
+
+}
+
+
+/* Desktop (1280px and up) */
+@media (min-width: 1280px) {
+    h1 {
+        font-size: 48px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .card {
+        padding: 40px;
+    }
+}
+
+/* Tablet (between 1024px and 1279px) */
+@media (max-width: 1279px) and (min-width: 1024px) {
+    h1 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 18px;
+    }
+    .card {
+        padding: 30px;
+    }
+}
+
+/* Mobile (640px to 1023px) */
+@media (max-width: 1023px) and (min-width: 640px) {
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .card {
+        padding: 20px;
+    }
+}
+
+/* Small mobile (below 640px) */
+@media (max-width: 639px) {
+    h1 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .card {
+        padding: 15px;
+    }
+    .container {
+        padding: 10px;
+    }
+}
